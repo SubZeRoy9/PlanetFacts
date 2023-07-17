@@ -18,10 +18,10 @@ neptune = Planet(30.06, 4495100000, 49528)
 ex = 0;
 while ex == 0:
     print("\n\tROY\'S FUN FACTS!")
-    inp = input("\n\tPlease type in undercase the planet you want to learn about \n\tType \"exit\" to exit the program\n\n\tPossible inputs: \"mercury\" \"venus\" \"earth\" \"mars\" \"jupiter\" \"saturn\" \"uranus\" \"neptune\" \"exit\"\n\t")
+    inp = input("\n\tPlease type in undercase the planet you want to learn about \n\tType \"exit\" to exit the program\n\n\tPossible inputs: \"[1] Mercury\" \"[2] Venus\" \"[3] Earth\" \"[4] Mars\" \"[5] Jupiter\" \"[6] Saturn\" \"[7] Uranus\" \"[8] Neptune\" \"[0] Exit\"\n\t")
 
     match inp:
-        case "mercury":
+        case "1":
             print("Mercury Selected")
             inp2 = input("[1] Distance in au\n[2] Distance in km\n[3] Diameter in km")
             match inp2:
@@ -32,7 +32,7 @@ while ex == 0:
                 case '3':
                     print("Diameter = " + str(mercury.size) + "km")
 
-        case "venus":
+        case "2":
             print("Venus Selected")
             inp2 = input("[1] Distance in au\n[2] Distance in km\n[3] Diameter in km")
             match inp2:
@@ -43,7 +43,7 @@ while ex == 0:
                 case '3':
                     print("Diameter = " + str(venus.size) + "km")
 
-        case "earth":
+        case "3":
             print("Earth Selected")
             inp2 = input("[1] Distance in au\n[2] Distance in km\n[3] Diameter in km")
             match inp2:
@@ -54,7 +54,7 @@ while ex == 0:
                 case '3':
                     print("Diameter = " + str(earth.size) + "km")
 
-        case "mars":
+        case "4":
             print("Mars Selected")
             inp2 = input("[1] Distance in au\n[2] Distance in km\n[3] Diameter in km")
             match inp2:
@@ -65,7 +65,7 @@ while ex == 0:
                 case '3':
                     print("Diameter = " + str(mars.size) + "km")
 
-        case "jupiter":
+        case "5":
             print("Jupiter Selected")
             inp2 = input("[1] Distance in au\n[2] Distance in km\n[3] Diameter in km")
             match inp2:
@@ -75,7 +75,7 @@ while ex == 0:
                     print("Distance from Sun in km = " + str(jupiter.dist_km) + "km")
                 case '3':
                     print("Diameter = " + str(jupiter.size) + "km")
-        case "saturn":
+        case "6":
             print("Saturn Selected")
             inp2 = input("[1] Distance in au\n[2] Distance in km\n[3] Diameter in km")
             match inp2:
@@ -85,7 +85,7 @@ while ex == 0:
                     print("Distance from Sun in km = " + str(saturn.dist_km) + "km")
                 case '3':
                     print("Diameter = " + str(saturn.size) + "km")
-        case "uranus":
+        case "7":
             print("Uranus Selected")
             inp2 = input("[1] Distance in au\n[2] Distance in km\n[3] Diameter in km")
             match inp2:
@@ -95,7 +95,7 @@ while ex == 0:
                     print("Distance from Sun in km = " + str(uranus.dist_km) + "km")
                 case '3':
                     print("Diameter = " + str(uranus.size) + "km")
-        case "neptune":
+        case "8":
             print("Neptune Selected")
             inp2 = input("[1] Distance in au\n[2] Distance in km\n[3] Diameter in km")
             match inp2:
@@ -105,7 +105,6 @@ while ex == 0:
                     print("Distance from Sun in km = " + str(neptune.dist_km) + "km")
                 case '3':
                     print("Diameter = " + str(neptune.size) + "km")
-        case "exit":
+        case "0":
             ex = 1
-
 
